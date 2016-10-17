@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Upgrade the Elasticsearch mapping template
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Upgrading the Elasticsearch Mapping Template
         | Beats Platform Reference [master]
       | Elastic
     </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Beats Platform Reference [master]" /><link rel="up" href="upgrading.html" title="Upgrading" /><link rel="prev" href="_upgrading_from_1_x_to_5_x.html" title="Upgrading from 1.x to 5.x" /><link rel="next" href="config-file-format.html" title="Config file format" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Docs/Libbeat/Reference/master" />
@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://static-www.elastic.co/static/css/main.css?q=247" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=200" rel="stylesheet">
     
     
 
-    <script src="https://static-www.elastic.co/static/js/jquery.min.js?q=247"></script>
-    <script src="https://static-www.elastic.co/static/js/bootstrap.min.js?q=247"></script>
-    <script src="https://static-www.elastic.co/static/js/jquery.cookie.js?q=247"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=200"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=200"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=200"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -120,8 +120,9 @@
       // --------------------- end of set language based on browser language -----------------
       </script>
 
+
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/guide.css?q=247" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=200" />
 
 
   
@@ -160,6 +161,14 @@
     olark.identify('1356-750-10-5709');/*]]>*/</script><noscript><a href="https://www.olark.com/site/1356-750-10-5709/contact" title="Contact us">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
     <!-- end olark code -->
 
+    <script> 
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); 
+      ga('create', 'UA-12395217-16', 'auto'); 
+      ga('send', 'pageview'); 
+    </script>
 
     <!-- Header Section -->
     
@@ -191,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=247" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=200" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -240,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=247" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=200" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -373,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=200">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=247") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=247") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=247") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="/static/js/horizon-swiper.min.js"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=200"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -545,7 +554,7 @@ Not what you want? See the
 <a href="../current/index.html">current release documentation</a>.
 </div><div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">Beats Platform Reference
       [master]
-    </a></span> » <span class="breadcrumb-link"><a href="upgrading.html">Upgrading</a></span> » <span class="breadcrumb-node">Upgrade the Elasticsearch mapping template</span></div><div class="navheader"><span class="prev"><a href="_upgrading_from_1_x_to_5_x.html">
+    </a></span> » <span class="breadcrumb-link"><a href="upgrading.html">Upgrading</a></span> » <span class="breadcrumb-node">Upgrading the Elasticsearch Mapping Template</span></div><div class="navheader"><span class="prev"><a href="_upgrading_from_1_x_to_5_x.html">
               « 
               Upgrading from 1.x to 5.x</a>
            
@@ -553,11 +562,11 @@ Not what you want? See the
            
           <a href="config-file-format.html">Config file format
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="upgrade-mapping-template"></a>Upgrade the Elasticsearch mapping template<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/upgrading.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>By default, the Elasticsearch mapping template which comes with the Beats is not
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="upgrade-mapping-template"></a>Upgrading the Elasticsearch Mapping Template<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/upgrading.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>By default, the Elasticsearch mapping template that comes with the Beats is not
 re-installed if it already exists.  This means that if the new Beats version
 adds new fields (e.g. a new module in Metricbeat), they won’t be reflected in
 the Elasticsearch mapping, which can result in visualization problems or
-incorect data.</p><p>You can set the <code class="literal">output.elasticsearch.template.overwrite</code> option to <code class="literal">true</code> to
+incorrect data.</p><p>You can set the <code class="literal">output.elasticsearch.template.overwrite</code> option to <code class="literal">true</code> to
 make the Beats install the new mapping template even if a template with the same
 name already exists. You can set this option in the configuration file or as a
 CLI flag, for example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">packetbeat -e -E output.elasticsearch.template.overwrite=true</pre></div><p>However, the mapping template is applied on index creation, so it won’t affect
@@ -573,7 +582,7 @@ re-index API:</p><div class="pre_wrapper"><pre class="programlisting prettyprint
   }
 }
 DELETE /packetbeat-2016.09.20</pre></div><p>Note that the reindex API command can take a long time, depending on the size of
-the index. It is recommended that the Beat is stopped during this time, so the
+the index. It is recommended that you stop the Beat during this time, so the
 order of operations should be:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
 Stop the old version of the Beat
 </li><li class="listitem">
@@ -910,38 +919,38 @@ adjustments to your Kibana dashboards.</p></div><div class="navfooter"><span cla
 <style type="text/css">
 	
     
-		.facebook{background:url("https://static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=247") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=200") no-repeat;}
     
     
-      .facebook:hover {background:url("https://static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=247")}		
-    
-	
-    
-		.twitter{background:url("https://static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=247") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=247")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=200")}		
     
 	
     
-		.linkedin{background:url("https://static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=247") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=200") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=247")}		
-    
-	
-    
-		.xing{background:url("https://static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=247") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=247")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=200")}		
     
 	
     
-		.youtube{background:url("https://static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=247") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=200") no-repeat;}
     
     
-      .youtube:hover {background:url("https://static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=247")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=200")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=200") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=200")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=200") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=200")}		
     
 	
 </style>
@@ -973,10 +982,10 @@ adjustments to your Kibana dashboards.</p></div><div class="navfooter"><span cla
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js?q=247"></script>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/slick.min.js?q=247"></script>
-<script src="https://static-www.elastic.co/static/js/nav-v5.js?q=247"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?q=247"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=200"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=200"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=200"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=200"></script> 
      
      <style></style>
      

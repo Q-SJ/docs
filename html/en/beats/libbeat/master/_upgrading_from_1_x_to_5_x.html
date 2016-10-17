@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Upgrading from 1.x to 5.x
         | Beats Platform Reference [master]
       | Elastic
-    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Beats Platform Reference [master]" /><link rel="up" href="upgrading.html" title="Upgrading" /><link rel="prev" href="_upgrading_between_minor_versions.html" title="Upgrading between minor versions" /><link rel="next" href="upgrade-mapping-template.html" title="Upgrade the Elasticsearch mapping template" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Docs/Libbeat/Reference/master" />
+    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Beats Platform Reference [master]" /><link rel="up" href="upgrading.html" title="Upgrading" /><link rel="prev" href="_upgrading_between_minor_versions.html" title="Upgrading Between Minor Versions" /><link rel="next" href="upgrade-mapping-template.html" title="Upgrading the Elasticsearch Mapping Template" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Docs/Libbeat/Reference/master" />
   	
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://static-www.elastic.co/static/css/main.css?q=247" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=200" rel="stylesheet">
     
     
 
-    <script src="https://static-www.elastic.co/static/js/jquery.min.js?q=247"></script>
-    <script src="https://static-www.elastic.co/static/js/bootstrap.min.js?q=247"></script>
-    <script src="https://static-www.elastic.co/static/js/jquery.cookie.js?q=247"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=200"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=200"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=200"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -120,8 +120,9 @@
       // --------------------- end of set language based on browser language -----------------
       </script>
 
+
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/guide.css?q=247" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=200" />
 
 
   
@@ -160,6 +161,14 @@
     olark.identify('1356-750-10-5709');/*]]>*/</script><noscript><a href="https://www.olark.com/site/1356-750-10-5709/contact" title="Contact us">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
     <!-- end olark code -->
 
+    <script> 
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); 
+      ga('create', 'UA-12395217-16', 'auto'); 
+      ga('send', 'pageview'); 
+    </script>
 
     <!-- Header Section -->
     
@@ -191,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=247" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=200" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -240,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=247" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=200" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -373,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="/static/css/horizon-swiper.min.css">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=200">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=247") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=247") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=247") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="/static/js/horizon-swiper.min.js"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=200"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -547,36 +556,35 @@ Not what you want? See the
       [master]
     </a></span> » <span class="breadcrumb-link"><a href="upgrading.html">Upgrading</a></span> » <span class="breadcrumb-node">Upgrading from 1.x to 5.x</span></div><div class="navheader"><span class="prev"><a href="_upgrading_between_minor_versions.html">
               « 
-              Upgrading between minor versions</a>
+              Upgrading Between Minor Versions</a>
            
         </span><span class="next">
            
-          <a href="upgrade-mapping-template.html">Upgrade the Elasticsearch mapping template
+          <a href="upgrade-mapping-template.html">Upgrading the Elasticsearch Mapping Template
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="_upgrading_from_1_x_to_5_x"></a>Upgrading from 1.x to 5.x<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/upgrading.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Before upgrading your Beats, please review the <a class="link" href="breaking-changes.html" title="Breaking changes">breaking changes</a> doc.</p><p>In addition to the subsections here, please read the
-<a class="xref" href="upgrade-mapping-template.html" title="Upgrade the Elasticsearch mapping template">Upgrade the Elasticsearch mapping template</a></p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_configuration_file_migration"></a>Configuration file migration<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/upgrading.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>Beats 5.0 come with several backwards incompatible configuration changes.
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="_upgrading_from_1_x_to_5_x"></a>Upgrading from 1.x to 5.x<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/upgrading.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Before upgrading your Beats, please review the <a class="link" href="breaking-changes.html" title="Breaking Changes">breaking changes</a> doc.</p><p>In addition to the subsections here, please read <a class="xref" href="upgrade-mapping-template.html" title="Upgrading the Elasticsearch Mapping Template">Upgrading the Elasticsearch Mapping Template</a>.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_migrating_configuration_files"></a>Migrating Configuration Files<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/upgrading.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>Beats 5.0 comes with several backwards incompatible configuration changes.
 However, we provide a script that can automatically fixup the most common
-settings in your configuration file.</p><p>This script can be found in the Beats download packages. For the <code class="literal">.tar.gz</code> and
-<code class="literal">.zip</code> archives, it is found under:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">./scripts/migrate_beat_config_1_x_to_5_0.py</pre></div><p>For the <code class="literal">.deb</code> and <code class="literal">.rpm</code> packages it is found under the
+settings in your configuration files.</p><p>You can find this script in the Beats download packages. For the <code class="literal">.tar.gz</code> and
+<code class="literal">.zip</code> archives, look under:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">./scripts/migrate_beat_config_1_x_to_5_0.py</pre></div><p>For the <code class="literal">.deb</code> and <code class="literal">.rpm</code> packages, look under the
 <code class="literal">/usr/share/&lt;beatname&gt;/scripts/</code> folder, for example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">/usr/share/packetbeat/scripts/migrate_beat_config_1_x_to_5_0.py</pre></div><p>Python 2.7 or later is required for executing the migration script.</p><p>To upgrade your configuration file automatically, simply pass it as an argument
-to the migration script, e.g.:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">&gt; ./scripts/migrate_beat_config_1_x_to_5_0.py packetbeat.yml
-Backup file created: packetbeat.yml.bak</pre></div><p>The script will automatically create a backup file and overwrite it with the
-upgraded version. You can also use the <code class="literal">--dry</code> option, which doesn’t modify the
-input file, but outputs the upgraded version to stdout instead.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_filebeat_registry_file_location_and_format"></a>Filebeat registry file location and format<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/upgrading.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>Filebeat stores the read offset in a registry file that it persist to disk. The
-format of this file has changed in version 5.0, but Filebeat automatically
-upgrades the format on first run, so there’s normally no action required on
+to the migration script, for example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">&gt; ./scripts/migrate_beat_config_1_x_to_5_0.py packetbeat.yml
+Backup file created: packetbeat.yml.bak</pre></div><p>The script will automatically create a backup file and overwrite the input file
+with the upgraded version. You can also use the <code class="literal">--dry</code> option, which doesn’t
+modify the input file, but outputs the upgraded version to stdout instead.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_filebeat_registry_file_location_and_format"></a>Filebeat Registry File Location and Format<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/upgrading.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>Filebeat stores the read offset in a registry file that it persists to disk.
+The format of this file has changed in version 5.0, but Filebeat automatically
+upgrades the format on the first run, so there’s normally no action required on
 upgrading.</p><p>If you have installed Filebeat from the DEB or RPM packages, the location of the
 file stays the same as well (<code class="literal">/var/lib/filebeat/registry</code>). Also if you’ve
-installed Filebeat as a service on Windows the location stays the same
+installed Filebeat as a service on Windows, the location stays the same
 (<code class="literal">C:\ProgramData\filebeat\registry</code>).</p><p>If you are running Filebeat from the <code class="literal">tar.gz</code> archive, however, the location of
 the registry file has changed. In version 1.x it was by default named
 <code class="literal">.filebeat</code> in the current working directory. In version 5.0, it is
 <code class="literal">data/registry</code> relative to the binary location. For upgrading in this case, we
 recommend copying the <code class="literal">.filebeat</code> file to <code class="literal">data/registry</code>.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_upgrading_topbeat_to_metricbeat"></a>Upgrading Topbeat to Metricbeat<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/upgrading.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>With the Beats 5.0 release, Topbeat is replaced by Metricbeat, which offers more
 functionality. More precisely, the Topbeat functionality is roughly equivalent
-with the "system" module in Metricbeat.</p><p>While there is no automatic way to convert a Topbeat configuration file in the
-equivalent Metricbeat configuration file, both configuration are simple enough
-that migrating shouldn’t take long.</p><p>For example, this is the input section of the Topbeat configuration file:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">input:
+to the "system" module in Metricbeat.</p><p>While there is no automatic way to convert a Topbeat configuration file to the
+equivalent of a Metricbeat configuration file, both configurations are simple
+enough that migrating shouldn’t take long.</p><p>For example, this is the input section of the Topbeat configuration file:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">input:
   # In seconds, defines how often to read server statistics
   period: 10
 
@@ -620,14 +628,14 @@ that migrating shouldn’t take long.</p><p>For example, this is the input secti
     - process
   enabled: true
   period: 10s
-  processes: ['.*']</pre></div><p>The rest of the configuration options (outputs, name, tags) stay the same or can
+  processes: ['.*']</pre></div><p>The remaining configuration options (outputs, name, tags) stay the same or can
 be upgraded using the migration script.</p></div></div><div class="navfooter"><span class="prev"><a href="_upgrading_between_minor_versions.html">
               « 
-              Upgrading between minor versions</a>
+              Upgrading Between Minor Versions</a>
            
         </span><span class="next">
            
-          <a href="upgrade-mapping-template.html">Upgrade the Elasticsearch mapping template
+          <a href="upgrade-mapping-template.html">Upgrading the Elasticsearch Mapping Template
                »
             </a></span></div>
 <!-- end body -->
@@ -949,38 +957,38 @@ be upgraded using the migration script.</p></div></div><div class="navfooter"><s
 <style type="text/css">
 	
     
-		.facebook{background:url("https://static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=247") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=200") no-repeat;}
     
     
-      .facebook:hover {background:url("https://static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=247")}		
-    
-	
-    
-		.twitter{background:url("https://static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=247") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=247")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=200")}		
     
 	
     
-		.linkedin{background:url("https://static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=247") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=200") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=247")}		
-    
-	
-    
-		.xing{background:url("https://static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=247") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=247")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=200")}		
     
 	
     
-		.youtube{background:url("https://static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=247") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=200") no-repeat;}
     
     
-      .youtube:hover {background:url("https://static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=247")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=200")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=200") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=200")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=200") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=200")}		
     
 	
 </style>
@@ -1012,10 +1020,10 @@ be upgraded using the migration script.</p></div></div><div class="navfooter"><s
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js?q=247"></script>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/slick.min.js?q=247"></script>
-<script src="https://static-www.elastic.co/static/js/nav-v5.js?q=247"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?q=247"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=200"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=200"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=200"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=200"></script> 
      
      <style></style>
      
