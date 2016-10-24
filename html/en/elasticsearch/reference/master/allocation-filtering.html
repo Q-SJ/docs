@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=200" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=460" rel="stylesheet">
     
     
 
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=200"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=200"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=200"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=460"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=460"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=460"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=200" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=460" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=200" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=460" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=200" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=460" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=200">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=460">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=200"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=460"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -565,7 +565,47 @@ Not what you want? See the
             </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="allocation-filtering"></a>Shard Allocation Filtering<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/modules/cluster/allocation_filtering.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>While <a class="xref" href="index-modules-allocation.html" title="Index Shard Allocation"><em>Index Shard Allocation</em></a> provides <span class="strong"><strong>per-index</strong></span> settings to control the
 allocation of shards to nodes, cluster-level shard allocation filtering allows
 you to allow or disallow the allocation of shards from <span class="strong"><strong>any</strong></span> index to
-particular nodes.</p><p>The typical use case for cluster-wide shard allocation filtering is when you
+particular nodes.</p><p>The available <span class="emphasis"><em>dynamic</em></span> cluster settings are as follows, where <code class="literal">{attribute}</code>
+refers to an arbitrary node attribute.:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+<code class="literal">cluster.routing.allocation.include.{attribute}</code>
+</span></dt><dd>
+    Allocate shards to a node whose <code class="literal">{attribute}</code> has at least one of the
+    comma-separated values.
+</dd><dt><span class="term">
+<code class="literal">cluster.routing.allocation.require.{attribute}</code>
+</span></dt><dd>
+    Only allocate shards to a node whose <code class="literal">{attribute}</code> has <span class="emphasis"><em>all</em></span> of the
+    comma-separated values.
+</dd><dt><span class="term">
+<code class="literal">cluster.routing.allocation.exclude.{attribute}</code>
+</span></dt><dd>
+    Do not allocate shards to a node whose <code class="literal">{attribute}</code> has <span class="emphasis"><em>none</em></span> of the
+    comma-separated values.
+</dd></dl></div><p>These special attributes are also supported:</p><div class="horizontal"><table cellpadding="4px" border="0"><colgroup><col /><col /></colgroup><tbody valign="top"><tr><td valign="top">
+<p>
+<code class="literal">_name</code>
+</p>
+</td><td valign="top">
+<p>
+Match nodes by node names
+</p>
+</td></tr><tr><td valign="top">
+<p>
+<code class="literal">_ip</code>
+</p>
+</td><td valign="top">
+<p>
+Match nodes by IP addresses (the IP address associated with the hostname)
+</p>
+</td></tr><tr><td valign="top">
+<p>
+<code class="literal">_host</code>
+</p>
+</td><td valign="top">
+<p>
+Match nodes by hostnames
+</p>
+</td></tr></tbody></table></div><p>The typical use case for cluster-wide shard allocation filtering is when you
 want to decommission a node, and you would like to move the shards from that
 node to other nodes in the cluster before shutting it down.</p><p>For instance, we could decommission a node using its IP address as follows:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">PUT _cluster/settings
 {
@@ -574,48 +614,8 @@ node to other nodes in the cluster before shutting it down.</p><p>For instance, 
   }
 }</pre></div><div class="console_widget" data-snippet="snippets/allocation-filtering/1.json"></div><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>Shards will only be relocated if it is possible to do so without
 breaking another routing constraint, such as never allocating a primary and
-replica shard to the same node.</p></div></div><p>Cluster-wide shard allocation filtering works in the same way as index-level
-shard allocation filtering (see <a class="xref" href="index-modules-allocation.html" title="Index Shard Allocation"><em>Index Shard Allocation</em></a> for details).</p><p>The available <span class="emphasis"><em>dynamic</em></span> cluster settings are as follows, where <code class="literal">{attribute}</code>
-refers to an arbitrary node attribute.:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term">
-<code class="literal">cluster.routing.allocation.include.{attribute}</code>
-</span></dt><dd>
-    Assign the index to a node whose <code class="literal">{attribute}</code> has at least one of the
-    comma-separated values.
-</dd><dt><span class="term">
-<code class="literal">cluster.routing.allocation.require.{attribute}</code>
-</span></dt><dd>
-    Assign the index to a node whose <code class="literal">{attribute}</code> has <span class="emphasis"><em>all</em></span> of the
-    comma-separated values.
-</dd><dt><span class="term">
-<code class="literal">cluster.routing.allocation.exclude.{attribute}</code>
-</span></dt><dd>
-    Assign the index to a node whose <code class="literal">{attribute}</code> has <span class="emphasis"><em>none</em></span> of the
-    comma-separated values.
-</dd></dl></div><p>These special attributes are also supported:</p><div class="horizontal"><table cellpadding="4px" border="0"><colgroup><col /><col /></colgroup><tbody valign="top"><tr><td valign="top">
-<p>
-<code class="literal">_name</code>
-</p>
-</td><td valign="top">
-<p>
-Match nodes by node name
-</p>
-</td></tr><tr><td valign="top">
-<p>
-<code class="literal">_ip</code>
-</p>
-</td><td valign="top">
-<p>
-Match nodes by IP address (the IP address associated with the hostname)
-</p>
-</td></tr><tr><td valign="top">
-<p>
-<code class="literal">_host</code>
-</p>
-</td><td valign="top">
-<p>
-Match nodes by hostname
-</p>
-</td></tr></tbody></table></div><p>All attribute values can be specified with wildcards, eg:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">PUT _cluster/settings
+replica shard to the same node.</p></div></div><p>In addition to listing multiple values as a comma-separated list, all
+attribute values can be specified with wildcards, eg:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">PUT _cluster/settings
 {
   "transient": {
     "cluster.routing.allocation.exclude._ip": "192.168.2.*"
@@ -948,38 +948,38 @@ Match nodes by hostname
 <style type="text/css">
 	
     
-		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=200") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=460") no-repeat;}
     
     
-      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=200")}		
-    
-	
-    
-		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=200") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=200")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=460")}		
     
 	
     
-		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=200") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=460") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=200")}		
-    
-	
-    
-		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=200") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=200")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=460")}		
     
 	
     
-		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=200") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=460") no-repeat;}
     
     
-      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=200")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=460")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=460") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=460")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=460") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=460")}		
     
 	
 </style>
@@ -1011,10 +1011,10 @@ Match nodes by hostname
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=200"></script>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=200"></script>
-<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=200"></script>
-<script src="https://stag-static-www.elastic.co/static/js/script.js?q=200"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=460"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=460"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=460"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=460"></script> 
      
      <style></style>
      

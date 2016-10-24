@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=200" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=460" rel="stylesheet">
     
     
 
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=200"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=200"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=200"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=460"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=460"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=460"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=200" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=460" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=200" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=460" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=200" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=460" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=200">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=460">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=200"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=460"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -564,7 +564,7 @@ Monitoring UI by configuring <a class="link" href="monitoring-settings.html#moni
 settings in <code class="literal">kibana.yml</code>.</p><p>For more information, see <a class="link" href="configuring-monitoring.html" title="Configuring Monitoring">Configuring Monitoring</a>.</p><h3><a id="general-monitoring-settings"></a>General Monitoring Settings</h3><div class="variablelist"><dl class="variablelist"><dt><span class="term">
 <code class="literal">xpack.monitoring.enabled</code>
 </span></dt><dd>
-Set to <code class="literal">false</code> to disable X-Pack Monitoring.
+Set to <code class="literal">false</code> to disable X-Pack monitoring.
 Configure in both <code class="literal">elasticsearch.yml</code> and <code class="literal">kibana.yml</code>.
 </dd></dl></div><h3><a id="monitoring-collection-settings"></a>Monitoring Collection Settings</h3><div class="variablelist"><dl class="variablelist"><dt><span class="term">
 <code class="literal">xpack.monitoring.collection.cluster.state.timeout</code>
@@ -595,7 +595,7 @@ Sets the timeout for collecting total indices statistics. Defaults to <code clas
 </span></dt><dd>
 Configures where the agent stores monitoring data. By default, the agent uses a local exporter that
 indexes monitoring data on the cluster where it is installed. Use an HTTP exporter to send data to
-a separate monitoring cluster. For more information, see <a class="link" href="configuring-monitoring.html#monitoring-cluster" title="Setting up a Separate Monitoring Cluster">Setting up a Separate Monitoring Cluster</a>.
+a separate monitoring cluster. For more information, see <a class="link" href="monitoring-cluster.html" title="Setting up a Separate Monitoring Cluster">Setting up a Separate Monitoring Cluster</a>.
 </dd><dt><span class="term">
 <code class="literal">xpack.monitoring.collection.index.recovery.active_only</code>
 </span></dt><dd>
@@ -726,7 +726,7 @@ send back a response. The default value is <code class="literal">10 * connection
 <code class="literal">ssl</code>
 </span></dt><dd>
 Each HTTP exporter can define its own TLS / SSL settings or inherit them. See the
-<a class="link" href="monitoring-settings.html#ssl-monitoring-settings" title="X-Pack Monitoring TLS/SSL Settings">TLS / SSL section below</a>.
+<a class="link" href="monitoring-settings.html#ssl-monitoring-settings" title="X-Pack monitoring TLS/SSL Settings">TLS / SSL section below</a>.
 </dd><dt><span class="term">
 <code class="literal">proxy.base_path</code>
 </span></dt><dd>
@@ -754,7 +754,7 @@ Whether to supply a placeholder pipeline to the monitoring cluster and a pipelin
 every bulk request. The default value is <code class="literal">true</code>. If disabled, then it means that it will not
 use pipelines, which means that a future release cannot automatically upgrade bulk requests
 to future-proof them.
-</dd></dl></div><h3><a id="ssl-monitoring-settings"></a>X-Pack Monitoring TLS/SSL Settings</h3><p>You can configure the following TLS/SSL settings. If the settings are not configured,
+</dd></dl></div><h3><a id="ssl-monitoring-settings"></a>X-Pack monitoring TLS/SSL Settings</h3><p>You can configure the following TLS/SSL settings. If the settings are not configured,
 the <a class="link" href="security-settings.html#ssl-tls-settings" title="Default TLS/SSL Settings">X-Pack defaults</a> will be used.</p><div class="variablelist"><dl class="variablelist"><dt><span class="term">
 <code class="literal">xpack.monitoring.exporters.$NAME.ssl.supported_protocols</code>
 </span></dt><dd>
@@ -772,7 +772,7 @@ Controls the verification of certificates. Valid values are <code class="literal
 Supported cipher suites can be found in Oracle’s <a class="ulink" href="http://docs.oracle.com/javase/8/docs/technotes/guides/security/SunProviders.html" target="_top">
 Java Cryptography Architecture documentation</a>. Defaults to the value of
 <code class="literal">xpack.ssl.cipher_suites</code>.
-</dd></dl></div><h4><a id="_x_pack_monitoring_tls_ssl_key_and_trusted_certificate_settings"></a>X-Pack Monitoring TLS/SSL Key and Trusted Certificate Settings</h4><p>The following settings are used to specify a private key, certificate, and the
+</dd></dl></div><h4><a id="_x_pack_monitoring_tls_ssl_key_and_trusted_certificate_settings"></a>X-Pack monitoring TLS/SSL Key and Trusted Certificate Settings</h4><p>The following settings are used to specify a private key, certificate, and the
 trusted certificates that should be used when communicating over an SSL/TLS connection.
 If none of the settings below are specified, this will default to the <a class="link" href="security-settings.html#ssl-tls-settings" title="Default TLS/SSL Settings">X-Pack defaults</a>.
 A private key and certificate are optional and would be used if the server requires client authentication for PKI
@@ -1145,38 +1145,38 @@ Password to the truststore.
 <style type="text/css">
 	
     
-		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=200") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=460") no-repeat;}
     
     
-      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=200")}		
-    
-	
-    
-		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=200") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=200")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=460")}		
     
 	
     
-		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=200") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=460") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=200")}		
-    
-	
-    
-		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=200") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=200")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=460")}		
     
 	
     
-		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=200") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=460") no-repeat;}
     
     
-      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=200")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=460")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=460") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=460")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=460") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=460")}		
     
 	
 </style>
@@ -1208,10 +1208,10 @@ Password to the truststore.
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=200"></script>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=200"></script>
-<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=200"></script>
-<script src="https://stag-static-www.elastic.co/static/js/script.js?q=200"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=460"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=460"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=460"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=460"></script> 
      
      <style></style>
      

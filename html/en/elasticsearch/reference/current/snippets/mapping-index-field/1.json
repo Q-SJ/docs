@@ -4,7 +4,7 @@ PUT index_1/my_type/1
   "text": "Document in index 1"
 }
 
-PUT index_2/my_type/2?refresh=true
+PUT index_2/my_type/2
 {
   "text": "Document in index 2"
 }
@@ -33,10 +33,7 @@ GET index_1,index_2/_search
   ],
   "script_fields": {
     "index_name": {
-      "script": {
-        "lang": "painless",
-        "inline": "doc['_index']" 
-      }
+      "script": "doc['_index']" 
     }
   }
 }

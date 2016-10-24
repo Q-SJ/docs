@@ -6,6 +6,5 @@ POST _reindex
   },
   "dest": {
     "index": "dest",
-    "routing": "=cat"
   }
 }

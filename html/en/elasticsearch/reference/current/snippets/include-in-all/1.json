@@ -4,10 +4,10 @@ PUT my_index
     "my_type": {
       "properties": {
         "title": { 
-          "type": "text"
-        },
+          "type": "string"
+        }
         "content": { 
-          "type": "text"
+          "type": "string"
         },
         "date": { 
           "type": "date",

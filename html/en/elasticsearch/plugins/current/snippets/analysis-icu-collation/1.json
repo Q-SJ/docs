@@ -22,12 +22,11 @@ PUT /my_index
     "user": {
       "properties": {
         "name": { 
-          "type": "text",
+          "type": "string",
           "fields": {
             "sort": { 
-              "type":      "text",
-              "fielddata": true,
-              "analyzer":  "german_phonebook"
+              "type":     "string",
+              "analyzer": "german_phonebook"
             }
           }
         }

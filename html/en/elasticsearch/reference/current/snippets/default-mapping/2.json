@@ -12,10 +12,11 @@ PUT _template/logging
           "strings": { 
             "match_mapping_type": "string",
             "mapping": {
-              "type": "text",
+              "type": "string",
               "fields": {
                 "raw": {
-                  "type":  "keyword",
+                  "type":  "string",
+                  "index": "not_analyzed",
                   "ignore_above": 256
                 }
               }

@@ -1,4 +1,4 @@
-PUT data/_settings
+PUT /_settings 
 {
-  "index.mapper.dynamic":false 
+  "index.mapper.dynamic":false
 }

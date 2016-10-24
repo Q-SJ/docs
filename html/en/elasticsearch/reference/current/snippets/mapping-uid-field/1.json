@@ -4,7 +4,7 @@ PUT my_index/my_type/1
   "text": "Document with ID 1"
 }
 
-PUT my_index/my_type/2?refresh=true
+PUT my_index/my_type/2
 {
   "text": "Document with ID 2"
 }
@@ -33,10 +33,7 @@ GET my_index/_search
   ],
   "script_fields": {
     "UID": {
-      "script": {
-         "lang": "painless",
-         "inline": "doc['_uid']" 
-      }
+      "script": "doc['_uid']" 
     }
   }
 }

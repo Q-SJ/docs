@@ -6,12 +6,13 @@ PUT my_index
         "name": {
           "properties": {
             "first": {
-              "type": "text"
+              "type": "string"
             }
           }
         },
         "user_id": {
-          "type": "keyword"
+          "type": "string",
+          "index": "not_analyzed"
         }
       }
     }
@@ -24,12 +25,13 @@ PUT my_index/_mapping/user
     "name": {
       "properties": {
         "last": { 
-          "type": "text"
+          "type": "string"
         }
       }
     },
     "user_id": {
-      "type": "keyword",
+      "type": "string",
+      "index": "not_analyzed",
       "ignore_above": 100 
     }
   }

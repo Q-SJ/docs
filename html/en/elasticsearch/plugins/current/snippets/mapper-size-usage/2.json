@@ -19,7 +19,7 @@ GET my_index/_search
     }
   },
   "aggs": {
-    "sizes": {
+    "Sizes": {
       "terms": {
         "field": "_size", 
         "size": 10
@@ -34,7 +34,7 @@ GET my_index/_search
     }
   ],
   "script_fields": {
-    "size": {
+    "Size": {
       "script": "doc['_size']"  
     }
   }

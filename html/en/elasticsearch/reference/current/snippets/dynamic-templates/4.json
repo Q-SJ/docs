@@ -8,7 +8,7 @@ PUT my_index
             "match_mapping_type": "string",
             "match": "*",
             "mapping": {
-              "type": "text",
+              "type": "string",
               "analyzer": "{name}"
             }
           }

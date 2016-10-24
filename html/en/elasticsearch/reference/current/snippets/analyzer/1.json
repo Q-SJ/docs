@@ -1,13 +1,13 @@
-PUT /my_index
+PUT my_index
 {
   "mappings": {
     "my_type": {
       "properties": {
         "text": { 
-          "type": "text",
+          "type": "string",
           "fields": {
             "english": { 
-              "type":     "text",
+              "type":     "string",
               "analyzer": "english"
             }
           }

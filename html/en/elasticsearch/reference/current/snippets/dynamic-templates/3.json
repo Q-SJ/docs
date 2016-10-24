@@ -8,7 +8,7 @@ PUT my_index
             "path_match":   "name.*",
             "path_unmatch": "*.middle",
             "mapping": {
-              "type":       "text",
+              "type":       "string",
               "copy_to":    "full_name"
             }
           }

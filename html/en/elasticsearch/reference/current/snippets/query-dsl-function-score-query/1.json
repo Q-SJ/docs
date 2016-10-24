@@ -1,11 +1,31 @@
-GET /_search
+GET /hotels/_search/
 {
-    "query": {
-        "function_score": {
-            "query": { "match_all": {} },
-            "boost": "5",
-            "random_score": {}, 
-            "boost_mode":"multiply"
+  "query": {
+    "function_score": {
+      "functions": [
+        {
+          "gauss": {
+            "price": {
+              "origin": "0",
+              "scale": "20"
+            }
+          }
+        },
+        {
+          "gauss": {
+            "location": {
+              "origin": "11, 12",
+              "scale": "2km"
+            }
+          }
         }
+      ],
+      "query": {
+        "match": {
+          "properties": "balcony"
+        }
+      },
+      "score_mode": "multiply"
     }
+  }
 }

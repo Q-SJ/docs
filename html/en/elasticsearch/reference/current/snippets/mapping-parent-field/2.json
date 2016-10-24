@@ -13,12 +13,16 @@ GET my_index/_search
       }
     }
   },
+  "sort": [
+    {
+      "_parent": { 
+        "order": "desc"
+      }
+    }
+  ],
   "script_fields": {
     "parent": {
-      "script": {
-         "lang": "painless",
-         "inline": "doc['_parent']" 
-      }
+      "script": "doc['_parent']" 
     }
   }
 }

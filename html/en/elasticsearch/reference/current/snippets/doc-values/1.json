@@ -4,10 +4,12 @@ PUT my_index
     "my_type": {
       "properties": {
         "status_code": { 
-          "type":       "keyword"
+          "type":       "string",
+          "index":      "not_analyzed"
         },
         "session_id": { 
-          "type":       "keyword",
+          "type":       "string",
+          "index":      "not_analyzed",
           "doc_values": false
         }
       }

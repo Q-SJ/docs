@@ -1,1 +1,1 @@
-GET /_tasks/taskId:1
+POST /_update_by_query/{task_id}/_rethrottle?requests_per_second=unlimited

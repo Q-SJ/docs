@@ -1,4 +1,4 @@
-PUT /trying-out-mapper-attachments
+POST /trying-out-mapper-attachments
 {
   "mappings": {
     "person": {

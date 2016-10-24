@@ -1,3 +1,4 @@
+DELETE /test
 PUT /test
 PUT /test/person/_mapping
 {
@@ -7,7 +8,7 @@ PUT /test/person/_mapping
         "type": "attachment",
         "fields": {
           "content": {
-            "type": "text",
+            "type": "string",
             "term_vector":"with_positions_offsets",
             "store": true
           }
@@ -22,7 +23,7 @@ PUT /test/person/1?refresh=true
 }
 GET /test/person/_search
 {
-  "stored_fields": [],
+  "fields": [],
   "query": {
     "match": {
       "file.content": "king queen"

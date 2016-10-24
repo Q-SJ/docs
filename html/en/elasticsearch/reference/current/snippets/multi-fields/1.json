@@ -1,13 +1,14 @@
-PUT my_index
+PUT /my_index
 {
   "mappings": {
     "my_type": {
       "properties": {
         "city": {
-          "type": "text",
+          "type": "string",
           "fields": {
             "raw": { 
-              "type":  "keyword"
+              "type":  "string",
+              "index": "not_analyzed"
             }
           }
         }
@@ -16,17 +17,17 @@ PUT my_index
   }
 }
 
-PUT my_index/my_type/1
+PUT /my_index/my_type/1
 {
   "city": "New York"
 }
 
-PUT my_index/my_type/2
+PUT /my_index/my_type/2
 {
   "city": "York"
 }
 
-GET my_index/_search
+GET /my_index/_search
 {
   "query": {
     "match": {

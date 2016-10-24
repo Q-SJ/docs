@@ -1,4 +1,4 @@
-POST /trying-out-mapper-attachments/person/1?refresh
+POST /trying-out-mapper-attachments/person/1
 {
   "cv": "e1xydGYxXGFuc2kNCkxvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0DQpccGFyIH0="
 }

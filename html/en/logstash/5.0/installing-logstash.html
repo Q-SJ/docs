@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=200" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=460" rel="stylesheet">
     
     
 
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=200"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=200"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=200"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=460"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=460"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=460"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=200" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=460" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=200" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=460" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=200" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=460" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=200">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=460">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=200") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=200"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=460"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -549,7 +549,10 @@
 				
             <div class="col-xs-12 col-sm-8 col-md-8 guide-section">
             <!-- start body -->
-<div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">Logstash Reference
+<div class="page_header">You are looking at preliminary documentation for a future release.
+Not what you want? See the
+<a href="../current/index.html">current release documentation</a>.
+</div><div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">Logstash Reference
       [5.0]
     </a></span> » <span class="breadcrumb-link"><a href="getting-started-with-logstash.html">Getting Started with Logstash</a></span> » <span class="breadcrumb-node">Installing Logstash</span></div><div class="navheader"><span class="prev"><a href="getting-started-with-logstash.html">
               « 
@@ -575,7 +578,9 @@ use <code class="literal">add-apt-repository</code> as it will add a <code class
 provide a source package. If you have added the <code class="literal">deb-src</code> entry, you will see an
 error like the following:</p><pre class="literallayout">Unable to find expected entry 'main/source/Sources' in Release file (Wrong sources.list entry or malformed file)</pre><p>Just delete the <code class="literal">deb-src</code> entry from the <code class="literal">/etc/apt/sources.list</code> file and the
 installation should work as expected.</p></div></div><p>Run <code class="literal">sudo apt-get update</code> and the repository is ready for use. You can install
-it with:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">sudo apt-get update &amp;&amp; sudo apt-get install logstash</pre></div><h4><a id="_yum"></a>YUM<a href="https://github.com/elastic/logstash/edit/master/docs/static/getting-started-with-logstash.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>Download and install the public signing key:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch</pre></div><p>Add the following in your <code class="literal">/etc/yum.repos.d/</code> directory
+it with:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">sudo apt-get update &amp;&amp; sudo apt-get install logstash</pre></div><p>Configure Logstash to automatically start during bootup. If your
+distribution is using SysV init, then you will need to run:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">sudo update-rc.d logstash defaults 95 10</pre></div><p>Otherwise if your distribution is using systemd:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable logstash.service</pre></div><h4><a id="_yum"></a>YUM<a href="https://github.com/elastic/logstash/edit/master/docs/static/getting-started-with-logstash.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>Download and install the public signing key:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch</pre></div><p>Add the following in your <code class="literal">/etc/yum.repos.d/</code> directory
 in a file with a <code class="literal">.repo</code> suffix, for example <code class="literal">logstash.repo</code></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">[logstash-5.x]
 name=Elastic repository for 5.x packages
 baseurl=https://artifacts.elastic.co/packages/5.x-prerelease/yum
@@ -583,7 +588,10 @@ gpgcheck=1
 gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=1
 autorefresh=1
-type=rpm-md</pre></div><p>And your repository is ready for use. You can install it with:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">sudo yum install logstash</pre></div></div><div class="navfooter"><span class="prev"><a href="getting-started-with-logstash.html">
+type=rpm-md</pre></div><p>And your repository is ready for use. You can install it with:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">sudo yum install logstash</pre></div><p>Configure Logstash to automatically start during bootup. If your
+distribution is using SysV <code class="literal">init</code> (check with <code class="literal">ps -p 1</code>), then you will need to run:</p><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p>The repositories do not work with older rpm based distributions
+         that still use RPM v3, like CentOS5.</p></div></div><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">chkconfig --add logstash</pre></div><p>Otherwise if your distribution is using <code class="literal">systemd</code>:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable logstash.service</pre></div></div><div class="navfooter"><span class="prev"><a href="getting-started-with-logstash.html">
               « 
               Getting Started with Logstash</a>
            
@@ -911,38 +919,38 @@ type=rpm-md</pre></div><p>And your repository is ready for use. You can install 
 <style type="text/css">
 	
     
-		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=200") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=460") no-repeat;}
     
     
-      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=200")}		
-    
-	
-    
-		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=200") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=200")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=460")}		
     
 	
     
-		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=200") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=460") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=200")}		
-    
-	
-    
-		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=200") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=200")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=460")}		
     
 	
     
-		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=200") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=460") no-repeat;}
     
     
-      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=200")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=460")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=460") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=460")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=460") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=460")}		
     
 	
 </style>
@@ -974,10 +982,10 @@ type=rpm-md</pre></div><p>And your repository is ready for use. You can install 
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=200"></script>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=200"></script>
-<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=200"></script>
-<script src="https://stag-static-www.elastic.co/static/js/script.js?q=200"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=460"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=460"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=460"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=460"></script> 
      
      <style></style>
      

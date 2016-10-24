@@ -7,11 +7,11 @@ PUT my_index
     "my_type": {
       "properties": {
         "number_one": {
-          "type": "integer",
-          "coerce": true
+          "type": "integer"
         },
         "number_two": {
-          "type": "integer"
+          "type": "integer",
+          "coerce": true
         }
       }
     }

@@ -7,12 +7,12 @@ PUT my_index
       },
       "properties": {
         "content": {
-          "type": "text"
+          "type": "string"
         }
       }
     }
   },
   "settings": {
     "index.query.default_field": "content" 
-  }
+  },
 }

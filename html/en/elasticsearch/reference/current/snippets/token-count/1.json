@@ -4,7 +4,7 @@ PUT my_index
     "my_type": {
       "properties": {
         "name": { 
-          "type": "text",
+          "type": "string",
           "fields": {
             "length": { 
               "type":     "token_count",

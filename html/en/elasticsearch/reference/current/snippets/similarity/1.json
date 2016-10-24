@@ -4,10 +4,10 @@ PUT my_index
     "my_type": {
       "properties": {
         "default_field": { 
-          "type": "text"
+          "type": "string"
         },
         "bm25_field": {
-          "type": "text",
+          "type": "string",
           "similarity": "BM25" 
         }
       }

@@ -1,7 +1,7 @@
-GET _analyze
+GET test/_analyze
 {
   "tokenizer" : "standard",
-  "filter" : ["snowball"],
+  "token_filter" : ["snowball"],
   "text" : "detailed output",
   "explain" : true,
   "attributes" : ["keyword"] 

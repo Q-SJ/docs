@@ -7,7 +7,7 @@ PUT my_index
         "user": { 
           "properties": {
             "name": {
-              "type": "text"
+              "type": "string"
             },
             "social_networks": { 
               "dynamic": true,

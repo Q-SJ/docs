@@ -1,8 +1,7 @@
-POST twitter/_update_by_query
+POST /twitter/_update_by_query
 {
   "script": {
-    "inline": "ctx._source.likes++",
-    "lang": "painless"
+    "inline": "ctx._source.likes++"
   },
   "query": {
     "term": {
