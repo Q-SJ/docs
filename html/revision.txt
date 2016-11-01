@@ -1,56 +1,56 @@
 Repo: beats
 --------------------------------------------------------------------------------
-  filebeat/docs_1.0.1    fad5c01  Override default header for Dev Guide topics only (#2373)
-  filebeat/docs_1.1      5ac9b09  Override default header for Dev Guide topics only (#2374)
-  filebeat/docs_1.2      1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
-  filebeat/docs_1.3      ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
-  filebeat/docs_5.0      ed9e4b9  cherrypick_pr: display a deep link to the GH PR (#2816) (#2824)
-  filebeat/docs_5.x      e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
-  filebeat/docs_master   b997a74  Wider inode and uid types (#2782)
-  libbeat/docs_1.0.1     fad5c01  Override default header for Dev Guide topics only (#2373)
-  libbeat/docs_1.1       5ac9b09  Override default header for Dev Guide topics only (#2374)
-  libbeat/docs_1.2       1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
-  libbeat/docs_1.3       ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
-  libbeat/docs_5.0       ed9e4b9  cherrypick_pr: display a deep link to the GH PR (#2816) (#2824)
-  libbeat/docs_5.x       e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
-  libbeat/docs_master    b997a74  Wider inode and uid types (#2782)
-  metricbeat/docs_5.0    ed9e4b9  cherrypick_pr: display a deep link to the GH PR (#2816) (#2824)
-  metricbeat/docs_5.x    e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
-  metricbeat/docs_master b997a74  Wider inode and uid types (#2782)
-  packetbeat/docs_1.0.1  fad5c01  Override default header for Dev Guide topics only (#2373)
-  packetbeat/docs_1.1    5ac9b09  Override default header for Dev Guide topics only (#2374)
-  packetbeat/docs_1.2    1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
-  packetbeat/docs_1.3    ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
-  packetbeat/docs_5.0    ed9e4b9  cherrypick_pr: display a deep link to the GH PR (#2816) (#2824)
-  packetbeat/docs_5.x    e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
-  packetbeat/docs_master b997a74  Wider inode and uid types (#2782)
-  topbeat/docs_1.0.1     fad5c01  Override default header for Dev Guide topics only (#2373)
-  topbeat/docs_1.1       5ac9b09  Override default header for Dev Guide topics only (#2374)
-  topbeat/docs_1.2       1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
-  topbeat/docs_1.3       ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
-  winlogbeat/docs_1.1    5ac9b09  Override default header for Dev Guide topics only (#2374)
-  winlogbeat/docs_1.2    1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
-  winlogbeat/docs_1.3    ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
-  winlogbeat/docs_5.0    ed9e4b9  cherrypick_pr: display a deep link to the GH PR (#2816) (#2824)
-  winlogbeat/docs_5.x    e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
-  winlogbeat/docs_master b997a74  Wider inode and uid types (#2782)
+  filebeat/docs_1.0.1       fad5c01  Override default header for Dev Guide topics only (#2373)
+  filebeat/docs_1.1         5ac9b09  Override default header for Dev Guide topics only (#2374)
+  filebeat/docs_1.2         1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
+  filebeat/docs_1.3         ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
+  filebeat/docs_5.0         4ab0a6c  Added the 1.3 releases to the master Changelog (#2871) (#2878)
+  filebeat/docs_5.x         e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
+  filebeat/docs_master      470d8b1  Improve prospector state handling (#2840)
+  libbeat/docs_1.0.1        fad5c01  Override default header for Dev Guide topics only (#2373)
+  libbeat/docs_1.1          5ac9b09  Override default header for Dev Guide topics only (#2374)
+  libbeat/docs_1.2          1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
+  libbeat/docs_1.3          ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
+  libbeat/docs_5.0          4ab0a6c  Added the 1.3 releases to the master Changelog (#2871) (#2878)
+  libbeat/docs_5.x          e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
+  libbeat/docs_master       470d8b1  Improve prospector state handling (#2840)
+  metricbeat/docs_5.0       4ab0a6c  Added the 1.3 releases to the master Changelog (#2871) (#2878)
+  metricbeat/docs_5.x       e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
+  metricbeat/docs_master    470d8b1  Improve prospector state handling (#2840)
+  packetbeat/docs_1.0.1     fad5c01  Override default header for Dev Guide topics only (#2373)
+  packetbeat/docs_1.1       5ac9b09  Override default header for Dev Guide topics only (#2374)
+  packetbeat/docs_1.2       1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
+  packetbeat/docs_1.3       ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
+  packetbeat/docs_5.0       4ab0a6c  Added the 1.3 releases to the master Changelog (#2871) (#2878)
+  packetbeat/docs_5.x       e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
+  packetbeat/docs_master    470d8b1  Improve prospector state handling (#2840)
+  topbeat/docs_1.0.1        fad5c01  Override default header for Dev Guide topics only (#2373)
+  topbeat/docs_1.1          5ac9b09  Override default header for Dev Guide topics only (#2374)
+  topbeat/docs_1.2          1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
+  topbeat/docs_1.3          ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
+  winlogbeat/docs_1.1       5ac9b09  Override default header for Dev Guide topics only (#2374)
+  winlogbeat/docs_1.2       1f14c79  Remove runoptions from all guides except Packetbeat (cherry-pick into 1.2) (#2450)
+  winlogbeat/docs_1.3       ad40a05  Backport: Add batch_read_size config to Winlogbeat (#2642)
+  winlogbeat/docs_5.0       4ab0a6c  Added the 1.3 releases to the master Changelog (#2871) (#2878)
+  winlogbeat/docs_5.x       e77af9e  Merge pull request #2523 from tsg/automatic_merge_from_master_to_5.x_branch
+  winlogbeat/docs_master    470d8b1  Improve prospector state handling (#2840)
 
 Repo: cloud
 --------------------------------------------------------------------------------
   docs/cloud-enterprise_1.0.0-alpha3 88cc443  Add Pioneer Program language to CE docs for #2173 (#2195) (#2250)
-  docs/saas_external                 5ab84da  Fix additional broken cross-document link (#2564)
+  docs/saas_external                 3c0b6b4  Fix cross-linking error due to section reference  (#2787)
 
 Repo: curator
 --------------------------------------------------------------------------------
-  docs/asciidoc_3.3 df6ebee  Fix documentation for the show command
-  docs/asciidoc_3.4 e80458e  Update docs for 3.4.1
-  docs/asciidoc_3.5 7ffc821  Merge pull request #586 from untergeek/3.5.1_docs
-  docs/asciidoc_4.0 aa172fe  Revert "Merge branch '4.x' into 4.0"
-  docs/asciidoc_4.1 9ca525a  Merge pull request #786 from jjm/patch-1
+  docs/asciidoc_3.3         df6ebee  Fix documentation for the show command
+  docs/asciidoc_3.4         e80458e  Update docs for 3.4.1
+  docs/asciidoc_3.5         7ffc821  Merge pull request #586 from untergeek/3.5.1_docs
+  docs/asciidoc_4.0         aa172fe  Revert "Merge branch '4.x' into 4.0"
+  docs/asciidoc_4.1         9ca525a  Merge pull request #786 from jjm/patch-1
 
 Repo: elasticsearch
 --------------------------------------------------------------------------------
-  docs/community-clients_master 127b4a8  Change permissions on config files (#20966)
+  docs/community-clients_master f81d28d  Fix transport host setting
   docs/groovy-api_0.90          d2bcbdf  Make REST spec param types consistent
   docs/groovy-api_1.3           1f38067  Fixed doc version links
   docs/groovy-api_1.4           49ed535  Fixed doc version links
@@ -61,10 +61,10 @@ Repo: elasticsearch
   docs/groovy-api_2.1           9a7d5e7  Fixed doc version links
   docs/groovy-api_2.2           e6c7338  docs: add note on the downside about using terms lookup and other queries that fetch data as part of query parsing in the percolator.
   docs/groovy-api_2.3           75e12c7  Merge pull request #20975 from zhenxing914/2.3
-  docs/groovy-api_2.4           d832967  Delete accidentally added Sysout
-  docs/groovy-api_5.0           6f8d244  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/groovy-api_5.x           d142c05  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/groovy-api_master        127b4a8  Change permissions on config files (#20966)
+  docs/groovy-api_2.4           bb1b935  [rest-api-spec] point to 2.4 docs
+  docs/groovy-api_5.0           17b4e6f  Fix transport host setting
+  docs/groovy-api_5.x           3083c36  Fix transport host setting
+  docs/groovy-api_master        f81d28d  Fix transport host setting
   docs/java-api_0.90            d2bcbdf  Make REST spec param types consistent
   docs/java-api_1.3             1f38067  Fixed doc version links
   docs/java-api_1.4             49ed535  Fixed doc version links
@@ -75,24 +75,24 @@ Repo: elasticsearch
   docs/java-api_2.1             9a7d5e7  Fixed doc version links
   docs/java-api_2.2             e6c7338  docs: add note on the downside about using terms lookup and other queries that fetch data as part of query parsing in the percolator.
   docs/java-api_2.3             75e12c7  Merge pull request #20975 from zhenxing914/2.3
-  docs/java-api_2.4             d832967  Delete accidentally added Sysout
-  docs/java-api_5.0             6f8d244  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/java-api_5.x             d142c05  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/java-api_master          127b4a8  Change permissions on config files (#20966)
-  docs/java-rest_5.0            6f8d244  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/java-rest_5.x            d142c05  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/java-rest_master         127b4a8  Change permissions on config files (#20966)
-  docs/perl_master              127b4a8  Change permissions on config files (#20966)
+  docs/java-api_2.4             bb1b935  [rest-api-spec] point to 2.4 docs
+  docs/java-api_5.0             17b4e6f  Fix transport host setting
+  docs/java-api_5.x             3083c36  Fix transport host setting
+  docs/java-api_master          f81d28d  Fix transport host setting
+  docs/java-rest_5.0            17b4e6f  Fix transport host setting
+  docs/java-rest_5.x            3083c36  Fix transport host setting
+  docs/java-rest_master         f81d28d  Fix transport host setting
+  docs/perl_master              f81d28d  Fix transport host setting
   docs/plugins_1.7              8451125  Fixed doc version links
   docs/plugins_2.0              cbe06d1  Fixed doc version links
   docs/plugins_2.1              9a7d5e7  Fixed doc version links
   docs/plugins_2.2              e6c7338  docs: add note on the downside about using terms lookup and other queries that fetch data as part of query parsing in the percolator.
   docs/plugins_2.3              75e12c7  Merge pull request #20975 from zhenxing914/2.3
-  docs/plugins_2.4              d832967  Delete accidentally added Sysout
-  docs/plugins_5.0              6f8d244  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/plugins_5.x              d142c05  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/plugins_master           127b4a8  Change permissions on config files (#20966)
-  docs/python_master            127b4a8  Change permissions on config files (#20966)
+  docs/plugins_2.4              bb1b935  [rest-api-spec] point to 2.4 docs
+  docs/plugins_5.0              17b4e6f  Fix transport host setting
+  docs/plugins_5.x              3083c36  Fix transport host setting
+  docs/plugins_master           f81d28d  Fix transport host setting
+  docs/python_master            f81d28d  Fix transport host setting
   docs/reference_0.90           d2bcbdf  Make REST spec param types consistent
   docs/reference_1.3            1f38067  Fixed doc version links
   docs/reference_1.4            49ed535  Fixed doc version links
@@ -103,11 +103,11 @@ Repo: elasticsearch
   docs/reference_2.1            9a7d5e7  Fixed doc version links
   docs/reference_2.2            e6c7338  docs: add note on the downside about using terms lookup and other queries that fetch data as part of query parsing in the percolator.
   docs/reference_2.3            75e12c7  Merge pull request #20975 from zhenxing914/2.3
-  docs/reference_2.4            d832967  Delete accidentally added Sysout
-  docs/reference_5.0            6f8d244  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/reference_5.x            d142c05  Add JVM option "-XX:-AssumeMP" in SystemD tests (#21063)
-  docs/reference_master         127b4a8  Change permissions on config files (#20966)
-  docs/resiliency_master        127b4a8  Change permissions on config files (#20966)
+  docs/reference_2.4            bb1b935  [rest-api-spec] point to 2.4 docs
+  docs/reference_5.0            17b4e6f  Fix transport host setting
+  docs/reference_5.x            3083c36  Fix transport host setting
+  docs/reference_master         f81d28d  Fix transport host setting
+  docs/resiliency_master        f81d28d  Fix transport host setting
   docs/river_0.90               d2bcbdf  Make REST spec param types consistent
   docs/river_1.3                1f38067  Fixed doc version links
   docs/river_1.4                49ed535  Fixed doc version links
@@ -115,7 +115,7 @@ Repo: elasticsearch
   docs/river_1.6                5de4cb1  Fixed doc version links
   docs/river_1.7                8451125  Fixed doc version links
   docs/river_2.0                cbe06d1  Fixed doc version links
-  docs/ruby_master              127b4a8  Change permissions on config files (#20966)
+  docs/ruby_master              f81d28d  Fix transport host setting
 
 Repo: elasticsearch-hadoop
 --------------------------------------------------------------------------------
@@ -124,81 +124,81 @@ Repo: elasticsearch-hadoop
   docs/src/reference/asciidoc_2.2    c11e37b  2.2.0 release
   docs/src/reference/asciidoc_2.3    054bf27  2.3.4 release
   docs/src/reference/asciidoc_2.4    4ab7a3e  2.4.0 release
-  docs/src/reference/asciidoc_5.0    9731ede  5.0.0-rc1 release
-  docs/src/reference/asciidoc_5.x    9731ede  5.0.0-rc1 release
-  docs/src/reference/asciidoc_master 0a98805  Fixing repository-hdfs link (#878)
+  docs/src/reference/asciidoc_5.0    b3b7037  5.0.0 release
+  docs/src/reference/asciidoc_5.x    81a333d  bump version
+  docs/src/reference/asciidoc_master 49f1565  bump version
 
 Repo: elasticsearch-js
 --------------------------------------------------------------------------------
-  docs_11.0 b16cd92  pin filterPath reference to 5.0 for now
-  docs_12.0 97f2190  pin filterPath reference to 5.0 for now
+  docs_11.0                 b16cd92  pin filterPath reference to 5.0 for now
+  docs_12.0                 b744b66  point changelog to elastic.co
 
 Repo: elasticsearch-net
 --------------------------------------------------------------------------------
   docs_1.x    ece99e6  Merge branch '1.x' of github.com:elastic/elasticsearch-net into 1.x
-  docs_2.x    515f212  Merge pull request #2321 from elastic/fix/2319-2.x
-  docs_5.x    b431dac  Change type of took field in responses
-  docs_master 70a0c9b  Merge pull request #2324 from FoneticSolutions/2308-tookDeserializationOnMaster
+  docs_2.x    1a5312e  showcase #2328 intended behavior
+  docs_5.x    3f82bf6  Clean up Matrix Stats Aggregation documentation
+  docs_master e8b6b6e  Update documentation
 
 Repo: elasticsearch-php
 --------------------------------------------------------------------------------
-  docs_0.4    ecd9be4  Docs: Fixed broken link.
-  docs_1.0    eaf6e4a  Update travis
-  docs_2.0    2f54f5c  Update Changelog
-  docs_master 9d376ba  Update Changelog
+  docs_0.4                  ecd9be4  Docs: Fixed broken link.
+  docs_1.0                  eaf6e4a  Update travis
+  docs_2.0                  2f54f5c  Update Changelog
+  docs_master               7d952c2  Update changelog
 
 Repo: guide
 --------------------------------------------------------------------------------
-  ._1.x    00c280a  Fixed some bad doc links
-  ._2.x    62c884e  Fixed doc version link
-  ._master 03c3ba4  make text consistent with example (#575)
+  ._1.x                     00c280a  Fixed some bad doc links
+  ._2.x                     64e0fd7  fix Elastisearch typo (#613)
+  ._master                  03c3ba4  make text consistent with example (#575)
 
 Repo: kibana
 --------------------------------------------------------------------------------
-  docs_3.0    80d995c  Merge pull request #5019 from palecur/origin/3.0
-  docs_4.0    f674c80  Fix hardcoded Kibana links
-  docs_4.1    4adfe14  docs: Tilemaps support 10 zoom instead of 18
-  docs_4.2    e041ea4  Fixed hard coded doc links
-  docs_4.3    8a3e295  Fixed hard coded doc links
-  docs_4.4    15d8f35  Fixed hard coded doc links
-  docs_4.5    ce4d021  docs: Tilemaps support 10 zoom instead of 18
-  docs_4.6    f80e745  docs: Tilemaps support 10 zoom instead of 18
-  docs_5.0    e5f5263  docs: Note deprecated ES features in breaking changes
-  docs_5.x    b9d7d4d  docs: Note deprecated ES features in breaking changes
-  docs_master 5dc4afb  docs: Tilemaps support 10 zoom instead of 18
+  docs_3.0                  80d995c  Merge pull request #5019 from palecur/origin/3.0
+  docs_4.0                  f674c80  Fix hardcoded Kibana links
+  docs_4.1                  4adfe14  docs: Tilemaps support 10 zoom instead of 18
+  docs_4.2                  e041ea4  Fixed hard coded doc links
+  docs_4.3                  8a3e295  Fixed hard coded doc links
+  docs_4.4                  15d8f35  Fixed hard coded doc links
+  docs_4.5                  ce4d021  docs: Tilemaps support 10 zoom instead of 18
+  docs_4.6                  474c0eb  Bump to version 4.6.3
+  docs_5.0                  b28772e  changed  setting to Management
+  docs_5.x                  405b541  Fix bug where the loading indicator was wider than the screen (#8854) (#8909)
+  docs_master               59d65fd  Fix bug where the loading indicator was wider than the screen (#8854)
 
 Repo: logstash
 --------------------------------------------------------------------------------
-  docs_1.5    678c871  Update doc links to W3Schools
-  docs_2.0    8936974  Default codec for rabbitmq is json
-  docs_2.1    3331717  Update doc links to W3Schools
-  docs_2.2    61a4f5d  Merge pull request #260 from dedemorton/logstash_issue#5558_2.2
-  docs_2.3    322fe3a  Update configuration.asciidoc
-  docs_2.4    01016cc  Update elasticsearch.asciidoc
-  docs_5.0    2fdd17e  Update elasticsearch.asciidoc
-  docs_5.x    53bb118  Update elasticsearch.asciidoc
-  docs_master bcc7cee  Update elasticsearch.asciidoc
+  docs_1.5                  678c871  Update doc links to W3Schools
+  docs_2.0                  8936974  Default codec for rabbitmq is json
+  docs_2.1                  3331717  Update doc links to W3Schools
+  docs_2.2                  61a4f5d  Merge pull request #260 from dedemorton/logstash_issue#5558_2.2
+  docs_2.3                  322fe3a  Update configuration.asciidoc
+  docs_2.4                  01016cc  Update elasticsearch.asciidoc
+  docs_5.0                  2ee418b  Sync docs
+  docs_5.x                  91c8d7a  Sync docs
+  docs_master               4521f6c  Sync docs
 
 Repo: sense
 --------------------------------------------------------------------------------
-  docs_master 1808c64  Merge pull request #155 from sylvainlaurent/patch-1
+  docs_master               e4b2764  Update README.md
 
 Repo: x-plugins
 --------------------------------------------------------------------------------
   docs/public/graph_2.3           81b28d3  Fixed absolute link in Shield
-  docs/public/graph_2.4           f2064fe  Write screenshot images to Kibana data dir (#3787) (#3842)
+  docs/public/graph_2.4           855c933  security: cache negative lookups for native roles
   docs/public/marvel_2.0          282a4c7  Fixed absolute link in Shield
   docs/public/marvel_2.1          8e7a1ef  Fixed absolute link in Shield
   docs/public/marvel_2.2          0a167f2  Fixed absolute link in Shield
   docs/public/marvel_2.3          81b28d3  Fixed absolute link in Shield
-  docs/public/marvel_2.4          f2064fe  Write screenshot images to Kibana data dir (#3787) (#3842)
+  docs/public/marvel_2.4          855c933  security: cache negative lookups for native roles
   docs/public/marvel_marvel-1.3   4830ef3  Updated docs-too-old header
-  docs/public/reporting_2.4       f2064fe  Write screenshot images to Kibana data dir (#3787) (#3842)
+  docs/public/reporting_2.4       855c933  security: cache negative lookups for native roles
   docs/public/shield_2.0          282a4c7  Fixed absolute link in Shield
   docs/public/shield_2.1          8e7a1ef  Fixed absolute link in Shield
   docs/public/shield_2.2          0a167f2  Fixed absolute link in Shield
   docs/public/shield_2.3          81b28d3  Fixed absolute link in Shield
-  docs/public/shield_2.4          f2064fe  Write screenshot images to Kibana data dir (#3787) (#3842)
+  docs/public/shield_2.4          855c933  security: cache negative lookups for native roles
   docs/public/shield_shield-1.0   b2b9edf  Updated docs-too-old header
   docs/public/shield_shield-1.1   c1bfd7a  Updated docs-too-old header
   docs/public/shield_shield-1.2   a38e2bd  Updated docs-too-old header
@@ -207,6 +207,6 @@ Repo: x-plugins
   docs/public/watcher_2.1         8e7a1ef  Fixed absolute link in Shield
   docs/public/watcher_2.2         0a167f2  Fixed absolute link in Shield
   docs/public/watcher_2.3         81b28d3  Fixed absolute link in Shield
-  docs/public/watcher_2.4         f2064fe  Write screenshot images to Kibana data dir (#3787) (#3842)
+  docs/public/watcher_2.4         855c933  security: cache negative lookups for native roles
   docs/public/watcher_watcher-1.0 c6aca87  Make REST spec params consistent
-  docs/public_5.0                 f64421c  Docs: Updated screen caps & cleaned up monitoring topic for 5.0.
+  docs/public_5.0                 f6ba871  monitoring ui: fix shard allocation duplicates (#3943)

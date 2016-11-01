@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=460" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=235" rel="stylesheet">
     
     
 
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=460"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=460"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=460"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=235"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=235"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=235"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=460" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=235" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=460" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=235" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=460" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=235" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=460">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=235">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=235") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=235") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=235") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=460"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=235"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -524,6 +524,12 @@
     </div>
   
 
+
+<style type="text/css">
+
+  
+
+</style>
     <div class="main-container">
       <section id="content" >
         <div class="content-wrapper">   
@@ -557,7 +563,7 @@
            
           <a href="custom-repository.html">Snapshot/Restore with Custom Repository
                »
-            </a></span></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a id="restoring-snapshots"></a>Restoring Snapshots</h2></div></div></div><p>Every 30 minutes, all the indexes in a cluster are snapshotted. Elastic Cloud keeps 48 hours worth of snapshot history around.</p><p>These snapshots can be used to recover from infrastructure failure when multiple data centers are not used for high availability, to recover from accidental deletion, and to copy an index.</p><p>When restoring a snapshot, you can restore to either the same cluster or to another cluster in the same region. Restoring to another cluster makes it easy to <span class="emphasis"><em>clone</em></span> a cluster: create a new cluster, then restore a snapshot from an existing cluster.</p><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="_listing_snapshots"></a>Listing Snapshots</h2></div></div></div><p>You can list a cluster’s snapshots by logging into the <a class="ulink" href="https://cloud.elastic.co/" target="_top">Elastic Cloud Console</a> and going to the <span class="strong"><strong>Snapshots</strong></span> view for the cluster.</p><p>The listing shows when the snapshot completed, whether the snapshot succeeded (or was just partial), as well as the number of shards and indexes in the snapshot.</p><p>Click on the timestamp of a snapshot to get to the restore snapshot page.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="_restoration_options"></a>Restoration Options</h2></div></div></div><p>When restoring a snapshot, there are a few options you can configure. These are all optional. If you just click <span class="strong"><strong>Restore</strong></span> without changing any options, all the indexes of the chosen snapshot will be recovered into the cluster the snapshot was taken on.</p><p>You can limit which indexes get restored by specifying an index pattern in the <span class="strong"><strong>Indexes</strong></span> field. For example <code class="literal">logstash-*,.kibana</code> will restore any index starting with <code class="literal">logstash-</code> as well as the <code class="literal">.kibana</code> index. Any other index will be ignored.</p><p>If you restore to the same cluster, you may need to specify a rename pattern and replacement, as you cannot restore to an index that already exists.</p><p>Lastly, the <span class="strong"><strong>Cluster</strong></span> dropdown will let you choose another cluster to restore to. If left blank, it will restore to the same cluster the snapshot was made from.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="_cross_cluster_restores"></a>Cross Cluster Restores</h2></div></div></div><p>When restoring a snapshot, you can choose which cluster to restore the snapshot to. You can use this feature to clone clusters.</p><p>A cluster is eligible to be a destination for the restore according to the following rules:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+            </a></span></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a id="restoring-snapshots"></a>Restoring Snapshots</h2></div></div></div><p>Every 30 minutes, all the indexes in a cluster are snapshotted. Elastic Cloud keeps 48 hours worth of snapshot history around.</p><p>These snapshots can be used to recover from infrastructure failure when multiple data centers are not used for high availability, to recover from accidental deletion, and to copy an index.</p><p>When restoring a snapshot, you can restore to either the same cluster or to another cluster in the same region. Restoring to another cluster makes it easy to <span class="emphasis"><em>clone</em></span> a cluster: create a new cluster, then restore a snapshot from an existing cluster.</p><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="_listing_snapshots"></a>Listing Snapshots</h2></div></div></div><p>You can list a cluster’s snapshots by logging into the <a class="ulink" href="https://cloud.elastic.co/" target="_top">Elastic Cloud Console</a> and going to the <span class="strong"><strong>Snapshots</strong></span> view for the cluster.</p><p>The listing shows when the snapshot completed, whether the snapshot succeeded (or was just partial), as well as the number of shards and indexes in the snapshot.</p><p>Click on the timestamp of a snapshot to get to the restore snapshot page.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="_restoration_options"></a>Restoration Options</h2></div></div></div><p>When restoring a snapshot, there are a few options you can configure. These are all optional. If you just click <span class="strong"><strong>Restore</strong></span> without changing any options, all the indexes of the chosen snapshot will be recovered into the cluster the snapshot was taken on.</p><p>You can limit which indexes get restored by specifying an index pattern in the <span class="strong"><strong>Indexes</strong></span> field. For example <code class="literal">logstash-*,.kibana</code> will restore any index starting with <code class="literal">logstash-</code> as well as the <code class="literal">.kibana</code> index. Any other index will be ignored.</p><p>If you restore to the same cluster, you may need to specify a rename pattern and replacement, as you cannot restore to an index that already exists.</p><p>Lastly, the <span class="strong"><strong>Cluster</strong></span> dropdown will let you choose another cluster to restore to. If left blank, it will restore to the same cluster the snapshot was made from.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="restore-from-cluster"></a>Cross Cluster Restores</h2></div></div></div><p>When restoring a snapshot, you can choose which cluster to restore the snapshot to. You can use this feature to clone clusters.</p><p>A cluster is eligible to be a destination for the restore according to the following rules:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
 The cluster must be in the same region. A snapshot made in <code class="literal">eu-west-1</code> cannot be restored to <code class="literal">us-east-1</code> at this point. If you need this feature, you can do so with a <a class="link" href="custom-repository.html" title="Snapshot/Restore with Custom Repository">custom repository</a>.
 </li><li class="listitem">
 The destination cluster must be able to read the indexes. For the time being, this means that a cluster must have a version equal to or higher than the source cluster.
@@ -578,9 +584,9 @@ The destination cluster must be able to read the indexes. For the time being, th
 					<div id="rtpcontainer" style="display: block;">
 						<h3>Top Videos</h3>
 						<ul>
-							<li><a href="https://www.elastic.co/webinars/elasticsearch-2-0-overview?baymax=default&elektra=docs&storm=top-video">Getting Started</a></li>
-							<li><a href="http://www.elastic.co/webinars/elasticsearch-performance-optimization-tale-two-tickets/?elektra=docs">Scaling</a></li>
-							<li><a href="http://www.elastic.co/webinars/shield-securing-your-data-in-elasticsearch/?elektra=docs">Security</a></li>
+							<li><a href="https://www.elastic.co/webinars/getting-started-elasticsearch?baymax=default&elektra=docs&storm=top-video">Elasticsearch Demo</a></li>
+							<li><a href="https://www.elastic.co/webinars/getting-started-kibana?baymax=default&elektra=docs&storm=top-video">Kibana 101</a></li>
+							<li><a href="https://www.elastic.co/webinars/getting-started-logstash?baymax=default&elektra=docs&storm=top-video">Logstash Primer</a></li>
 						</ul>
 					</div>
 				</div>
@@ -638,13 +644,19 @@ The destination cluster must be able to read the indexes. For the time being, th
               
                 
                   
+                    <li><a href="/products/beats">Beats</a></li>
+                  
+                
+              
+                
+                  
                     <li><a href="/products/logstash">Logstash</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/beats">Beats</a></li>
+                    <li><a href="/products/x-pack">X-Pack</a></li>
                   
                 
               
@@ -656,25 +668,31 @@ The destination cluster must be able to read the indexes. For the time being, th
               
                 
                   
-                    <li><a href="/products/shield">Shield (Security)</a></li>
+                    <li><a href="/products/x-pack/security">Security (formerly Shield)</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/watcher">Watcher (Alerting)</a></li>
+                    <li><a href="/products/x-pack/alerting">Alerting (via Watcher)</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/marvel">Marvel (Monitoring)</a></li>
+                    <li><a href="/products/x-pack/monitoring">Monitoring (formerly Marvel)</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/graph">Graph</a></li>
+                    <li><a href="/products/x-pack/graph">Graph</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a href="/products/x-pack/reporting">Reporting</a></li>
                   
                 
               
@@ -889,38 +907,38 @@ The destination cluster must be able to read the indexes. For the time being, th
 <style type="text/css">
 	
     
-		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=460") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=235") no-repeat;}
     
     
-      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=460")}		
-    
-	
-    
-		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=460") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=460")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=235")}		
     
 	
     
-		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=460") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=235") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=460")}		
-    
-	
-    
-		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=460") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=460")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=235")}		
     
 	
     
-		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=460") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=235") no-repeat;}
     
     
-      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=460")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=235")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=235") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=235")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=235") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=235")}		
     
 	
 </style>
@@ -952,10 +970,10 @@ The destination cluster must be able to read the indexes. For the time being, th
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=460"></script>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=460"></script>
-<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=460"></script>
-<script src="https://stag-static-www.elastic.co/static/js/script.js?q=460"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=235"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=235"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=235"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=235"></script> 
      
      <style></style>
      

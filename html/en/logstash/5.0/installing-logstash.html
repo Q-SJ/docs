@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=460" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=235" rel="stylesheet">
     
     
 
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=460"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=460"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=460"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=235"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=235"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=235"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=460" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=235" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=460" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=235" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=460" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=235" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=460">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=235">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=235") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=235") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=235") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=460"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=235"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -524,6 +524,12 @@
     </div>
   
 
+
+<style type="text/css">
+
+  
+
+</style>
     <div class="main-container">
       <section id="content" >
         <div class="content-wrapper">   
@@ -570,10 +576,10 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.65-b01, mixed mode)</pre></div><h3><
 Unpack the file. Do not install Logstash into a directory path that contains colon (:) characters.</p><p>On supported Linux operating systems, you can use a package manager to install Logstash.</p><h3><a id="package-repositories"></a>Installing from Package Repositories<a href="https://github.com/elastic/logstash/edit/master/docs/static/getting-started-with-logstash.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>We also have repositories available for APT and YUM based distributions. Note
 that we only provide binary packages, but no source packages, as the packages
 are created as part of the Logstash build.</p><p>We have split the Logstash package repositories by version into separate urls
-to avoid accidental upgrades across major or minor versions. For all 2.3.x
-releases use 2.3 as version number, for 2.2.x use 2.2, etc.</p><p>We use the PGP key
+to avoid accidental upgrades across major versions. For all 5.x.y
+releases use 5.x as version number.</p><p>We use the PGP key
 <a class="ulink" href="https://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0xD27D666CD88E42B4" target="_top">D88E42B4</a>,
-Elastic’s Signing Key, with fingerprint</p><pre class="literallayout">4609 5ACC 8548 582C 1A26 99A9 D27D 666C D88E 42B4</pre><p>to sign all our packages. It is available from <a class="ulink" href="https://pgp.mit.edu" target="_top">https://pgp.mit.edu</a>.</p><h4><a id="_apt"></a>APT<a href="https://github.com/elastic/logstash/edit/master/docs/static/getting-started-with-logstash.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>Download and install the Public Signing Key:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -</pre></div><p>You may need to install the <code class="literal">apt-transport-https</code> package on Debian before proceeding:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">sudo apt-get install apt-transport-https</pre></div><p>Save the repository definition to  <code class="literal">/etc/apt/sources.list.d/elastic-5.x.list</code>:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">echo "deb https://artifacts.elastic.co/packages/5.x-prerelease/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list</pre></div><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p>Use the <code class="literal">echo</code> method described above to add the Logstash repository.  Do not
+Elastic’s Signing Key, with fingerprint</p><pre class="literallayout">4609 5ACC 8548 582C 1A26 99A9 D27D 666C D88E 42B4</pre><p>to sign all our packages. It is available from <a class="ulink" href="https://pgp.mit.edu" target="_top">https://pgp.mit.edu</a>.</p><h4><a id="_apt"></a>APT<a href="https://github.com/elastic/logstash/edit/master/docs/static/getting-started-with-logstash.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>Download and install the Public Signing Key:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -</pre></div><p>You may need to install the <code class="literal">apt-transport-https</code> package on Debian before proceeding:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">sudo apt-get install apt-transport-https</pre></div><p>Save the repository definition to  <code class="literal">/etc/apt/sources.list.d/elastic-5.x.list</code>:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list</pre></div><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p>Use the <code class="literal">echo</code> method described above to add the Logstash repository.  Do not
 use <code class="literal">add-apt-repository</code> as it will add a <code class="literal">deb-src</code> entry as well, but we do not
 provide a source package. If you have added the <code class="literal">deb-src</code> entry, you will see an
 error like the following:</p><pre class="literallayout">Unable to find expected entry 'main/source/Sources' in Release file (Wrong sources.list entry or malformed file)</pre><p>Just delete the <code class="literal">deb-src</code> entry from the <code class="literal">/etc/apt/sources.list</code> file and the
@@ -583,7 +589,7 @@ distribution is using SysV init, then you will need to run:</p><div class="pre_w
 sudo /bin/systemctl enable logstash.service</pre></div><h4><a id="_yum"></a>YUM<a href="https://github.com/elastic/logstash/edit/master/docs/static/getting-started-with-logstash.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><p>Download and install the public signing key:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch</pre></div><p>Add the following in your <code class="literal">/etc/yum.repos.d/</code> directory
 in a file with a <code class="literal">.repo</code> suffix, for example <code class="literal">logstash.repo</code></p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-sh">[logstash-5.x]
 name=Elastic repository for 5.x packages
-baseurl=https://artifacts.elastic.co/packages/5.x-prerelease/yum
+baseurl=https://artifacts.elastic.co/packages/5.x/yum
 gpgcheck=1
 gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=1
@@ -608,9 +614,9 @@ sudo /bin/systemctl enable logstash.service</pre></div></div><div class="navfoot
 					<div id="rtpcontainer" style="display: block;">
 						<h3>Top Videos</h3>
 						<ul>
-							<li><a href="https://www.elastic.co/webinars/elasticsearch-2-0-overview?baymax=default&elektra=docs&storm=top-video">Getting Started</a></li>
-							<li><a href="http://www.elastic.co/webinars/elasticsearch-performance-optimization-tale-two-tickets/?elektra=docs">Scaling</a></li>
-							<li><a href="http://www.elastic.co/webinars/shield-securing-your-data-in-elasticsearch/?elektra=docs">Security</a></li>
+							<li><a href="https://www.elastic.co/webinars/getting-started-elasticsearch?baymax=default&elektra=docs&storm=top-video">Elasticsearch Demo</a></li>
+							<li><a href="https://www.elastic.co/webinars/getting-started-kibana?baymax=default&elektra=docs&storm=top-video">Kibana 101</a></li>
+							<li><a href="https://www.elastic.co/webinars/getting-started-logstash?baymax=default&elektra=docs&storm=top-video">Logstash Primer</a></li>
 						</ul>
 					</div>
 				</div>
@@ -668,13 +674,19 @@ sudo /bin/systemctl enable logstash.service</pre></div></div><div class="navfoot
               
                 
                   
+                    <li><a href="/products/beats">Beats</a></li>
+                  
+                
+              
+                
+                  
                     <li><a href="/products/logstash">Logstash</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/beats">Beats</a></li>
+                    <li><a href="/products/x-pack">X-Pack</a></li>
                   
                 
               
@@ -686,25 +698,31 @@ sudo /bin/systemctl enable logstash.service</pre></div></div><div class="navfoot
               
                 
                   
-                    <li><a href="/products/shield">Shield (Security)</a></li>
+                    <li><a href="/products/x-pack/security">Security (formerly Shield)</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/watcher">Watcher (Alerting)</a></li>
+                    <li><a href="/products/x-pack/alerting">Alerting (via Watcher)</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/marvel">Marvel (Monitoring)</a></li>
+                    <li><a href="/products/x-pack/monitoring">Monitoring (formerly Marvel)</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/graph">Graph</a></li>
+                    <li><a href="/products/x-pack/graph">Graph</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a href="/products/x-pack/reporting">Reporting</a></li>
                   
                 
               
@@ -919,38 +937,38 @@ sudo /bin/systemctl enable logstash.service</pre></div></div><div class="navfoot
 <style type="text/css">
 	
     
-		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=460") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=235") no-repeat;}
     
     
-      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=460")}		
-    
-	
-    
-		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=460") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=460")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=235")}		
     
 	
     
-		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=460") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=235") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=460")}		
-    
-	
-    
-		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=460") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=460")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=235")}		
     
 	
     
-		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=460") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=235") no-repeat;}
     
     
-      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=460")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=235")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=235") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=235")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=235") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=235")}		
     
 	
 </style>
@@ -982,10 +1000,10 @@ sudo /bin/systemctl enable logstash.service</pre></div></div><div class="navfoot
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=460"></script>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=460"></script>
-<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=460"></script>
-<script src="https://stag-static-www.elastic.co/static/js/script.js?q=460"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=235"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=235"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=235"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=235"></script> 
      
      <style></style>
      

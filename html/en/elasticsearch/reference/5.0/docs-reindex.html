@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=460" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=235" rel="stylesheet">
     
     
 
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=460"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=460"></script>
-    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=460"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=235"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=235"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=235"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=460" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=235" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=460" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=235" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=460" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=235" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=460">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=235">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=235") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=235") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=460") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=235") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=460"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=235"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -524,6 +524,12 @@
     </div>
   
 
+
+<style type="text/css">
+
+  
+
+</style>
     <div class="main-container">
       <section id="content" >
         <div class="content-wrapper">   
@@ -822,7 +828,11 @@ of allowed remote <code class="literal">host</code> and <code class="literal">po
 ignored by the whitelist - only host and port are used.</p><p>This feature should work with remote clusters of any version of Elasticsearch
 you are likely to find. This should allow you to upgrade from any version of
 Elasticsearch to the current version by reindexing from a cluster of the old
-version.</p><p>To enable queries sent to older versions of Elasticsearch the <code class="literal">query</code> parameter
+version.</p><div class="warning admon"><div class="icon"><img alt="Warning" src="images/icons/warning.png" /></div><div class="admon_content"><p>Reindex-from-remote in Elasticsearch 5.0.0 will not preserve <code class="literal">_parent</code>,
+<code class="literal">_routing</code>, or <code class="literal">_ttl</code> fields from a 1.x cluster. Re-indexing documents
+whose mappings require any of these fields, such as child documents, will
+fail. To re-index documents requiring these fields, use Elasticsearch 5.0.1
+or later.</p></div></div><p>To enable queries sent to older versions of Elasticsearch the <code class="literal">query</code> parameter
 is sent directly to the remote host without validation or modification.</p><h3><a id="_url_parameters_3"></a>URL Parameters<a href="https://github.com/elastic/elasticsearch/edit/5.0/docs/reference/docs/reindex.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3><p>In addition to the standard parameters like <code class="literal">pretty</code>, the Reindex API also
 supports <code class="literal">refresh</code>, <code class="literal">wait_for_completion</code>, <code class="literal">wait_for_active_shards</code>, <code class="literal">timeout</code>, and
 <code class="literal">requests_per_second</code>.</p><p>Sending the <code class="literal">refresh</code> url parameter will cause all indexes to which the request
@@ -1044,9 +1054,9 @@ to only load the existing data into the new index, but also rename fields if nee
 					<div id="rtpcontainer" style="display: block;">
 						<h3>Top Videos</h3>
 						<ul>
-							<li><a href="https://www.elastic.co/webinars/elasticsearch-2-0-overview?baymax=default&elektra=docs&storm=top-video">Getting Started</a></li>
-							<li><a href="http://www.elastic.co/webinars/elasticsearch-performance-optimization-tale-two-tickets/?elektra=docs">Scaling</a></li>
-							<li><a href="http://www.elastic.co/webinars/shield-securing-your-data-in-elasticsearch/?elektra=docs">Security</a></li>
+							<li><a href="https://www.elastic.co/webinars/getting-started-elasticsearch?baymax=default&elektra=docs&storm=top-video">Elasticsearch Demo</a></li>
+							<li><a href="https://www.elastic.co/webinars/getting-started-kibana?baymax=default&elektra=docs&storm=top-video">Kibana 101</a></li>
+							<li><a href="https://www.elastic.co/webinars/getting-started-logstash?baymax=default&elektra=docs&storm=top-video">Logstash Primer</a></li>
 						</ul>
 					</div>
 				</div>
@@ -1104,13 +1114,19 @@ to only load the existing data into the new index, but also rename fields if nee
               
                 
                   
+                    <li><a href="/products/beats">Beats</a></li>
+                  
+                
+              
+                
+                  
                     <li><a href="/products/logstash">Logstash</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/beats">Beats</a></li>
+                    <li><a href="/products/x-pack">X-Pack</a></li>
                   
                 
               
@@ -1122,25 +1138,31 @@ to only load the existing data into the new index, but also rename fields if nee
               
                 
                   
-                    <li><a href="/products/shield">Shield (Security)</a></li>
+                    <li><a href="/products/x-pack/security">Security (formerly Shield)</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/watcher">Watcher (Alerting)</a></li>
+                    <li><a href="/products/x-pack/alerting">Alerting (via Watcher)</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/marvel">Marvel (Monitoring)</a></li>
+                    <li><a href="/products/x-pack/monitoring">Monitoring (formerly Marvel)</a></li>
                   
                 
               
                 
                   
-                    <li><a href="/products/graph">Graph</a></li>
+                    <li><a href="/products/x-pack/graph">Graph</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a href="/products/x-pack/reporting">Reporting</a></li>
                   
                 
               
@@ -1355,38 +1377,38 @@ to only load the existing data into the new index, but also rename fields if nee
 <style type="text/css">
 	
     
-		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=460") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=235") no-repeat;}
     
     
-      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=460")}		
-    
-	
-    
-		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=460") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=460")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=235")}		
     
 	
     
-		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=460") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=235") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=460")}		
-    
-	
-    
-		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=460") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=460")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=235")}		
     
 	
     
-		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=460") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=235") no-repeat;}
     
     
-      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=460")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=235")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=235") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=235")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=235") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=235")}		
     
 	
 </style>
@@ -1418,10 +1440,10 @@ to only load the existing data into the new index, but also rename fields if nee
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=460"></script>
-<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=460"></script>
-<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=460"></script>
-<script src="https://stag-static-www.elastic.co/static/js/script.js?q=460"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=235"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=235"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=235"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=235"></script> 
      
      <style></style>
      
